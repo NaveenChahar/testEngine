@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>testengine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom/welcome.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/custom/utils/util.js"></script>
+    <script src="js/custom/config.js"></script>
+    <script src="js/custom/Models/db.js"></script>
+    <script src="js/custom/Models/useroperations.js"></script>
+    <script src="js/custom/controller/usercontroller.js"></script>
+    
+
+</head>
+<body>
+    <div class="show" id="intro">
+    <h1>THIS IS AN EXAM PORTAL</h1>
+    <button id="student" type="button" class="btn btn-primary">Login as Student</button>
+    <button id="teacher" type="button" class="btn btn-primary">Login as Teacher</button>
+    </div>
+    <div class="hide" id="studentLogin">
+        <label>Userid</label>
+        <input id="studentid" type="text" placeholder="enter userid">
+        </br>
+
+        <label>Password</label>
+        <input id="studentpassword" type="password" placeholder="enter password">
+        </br>
+        <button id="stLogin" type="button" class="btn btn-primary">Submit</button>
+
+
+    </div>
+    <div class="hide" id="teacherLogin">
+        <label>Userid</label>
+        <input id="teacherid" type="text" placeholder="enter userid">
+        </br>
+
+        <label>Password</label>
+        <input id="teacherpassword" type="password" placeholder="enter password">
+        </br>
+        <button id="tLogin" type="button" class="btn btn-primary">Submit</button>
+
+    </div>
+    <span id="message"></span>
+
+    
+</body>
+</html>

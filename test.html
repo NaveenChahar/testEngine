@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom/welcome.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/custom/utils/util.js"></script>
+    <script src="js/custom/Models/db.js"></script>
+    <script src="js/custom/Models/questionoperations.js"></script>
+    <script src="js/custom/controller/testcontroller.js"></script>
+
+</head>
+<body>
+    <div id="container" style="padding-left: 7%">
+    <div id="navigation" style="display:flex;justify-content: center;padding: 5% 0%;">
+        <button id="q1" class="btn red" type="button" class="btn btn-primary">1</button>
+        <button id="q2" class="btn red" type="button" class="btn btn-primary">2</button>
+        <button id="q3" class="btn red" type="button" class="btn btn-primary">3</button>
+        
+    </div>
+    <p>Time Left : <span id="time"></span></p>
+
+    <p>Question : <span id="question"></span></p>
+    <br>
+    <input id="1"type="radio" name="answer">
+    <span id="option1"></span>
+    <br>
+    <input id="2" type="radio" name="answer">
+    <span id="option2"></span>
+    <br>
+    <input id="3" type="radio" name="answer">
+    <span id="option3"></span>
+    <br>
+    <input id="4" type="radio" name="answer">
+    <span id="option4"></span>
+    <br>
+    <button id="back" type="button" class="btn btn-primary">Back</button>
+    <button id="next" type="button" class="btn btn-primary">Next</button>
+    <button id="finish" type="button" class="btn btn-primary">Finish test</button>
+
+    </div>
+    
+
+</body>
+</html>
