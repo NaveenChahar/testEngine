@@ -10,14 +10,14 @@ function init(){
 function bindEvents(){
     currentQuestion=1;
     bringQuestions();
-    //timer(timeLimit);
+    timer(timeLimit);
     bringOptions();
     document.querySelector("#back").addEventListener("click",prevQues);
     document.querySelector("#next").addEventListener("click",nextQues);
     document.querySelector("#finish").addEventListener("click",finishTest);
-    // document.querySelector("#q1").addEventListener("click",nav(q1));
-    // document.querySelector("#q2").addEventListener("click",nav(q2));
-    // document.querySelector("#q3").addEventListener("click",nav(q3));
+    document.querySelector("#q1").addEventListener("click",function(){nav(1);},false);
+    document.querySelector("#q2").addEventListener("click",function(){nav(2);},false);
+    document.querySelector("#q3").addEventListener("click",function(){nav(3);},false);
 
 }
 function enableDisable(){
@@ -126,10 +126,10 @@ function timer(timeLimit){
       ans=document.querySelector("#option"+ans).innerHTML;
       questionOperations.checkAns(currentQuestion,ans);
   }
-//   function nav(id){
-//     currentQuestion=parseInt(document.getElementById(id).innerHTML);
-//     var question=questionOperations.getQuestion(currentQuestion);
-//     printQuestion(question);
-//     printOptions(questionOperations.getOptions(currentQuestion));
-//     enableDisable();
-//   }
+   function nav(id){
+    currentQuestion=id;
+    var question=questionOperations.getQuestion(currentQuestion);
+    printQuestion(question);
+    printOptions(questionOperations.getOptions(currentQuestion));
+    enableDisable();
+  }
